@@ -12,12 +12,13 @@ class Program
 
     static int GetLengthOfMiddleName(Person p)
     {
-        if (p.MiddleName == null)
+        var middleName = p.MiddleName;
+        if (middleName == null)
         {
-            return 0;
+            middleName = "";
         }
 
-        return p.MiddleName.Length;
+        return middleName.Length;
     }
 }
 
