@@ -12,7 +12,7 @@ class Program
 
     static int GetLengthOfMiddleName(Person p)
     {
-        var middleName = p.MiddleName;
+        string middleName = p.MiddleName;
         if (middleName == null)
         {
             middleName = "";
